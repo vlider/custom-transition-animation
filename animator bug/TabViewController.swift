@@ -1,5 +1,5 @@
 //
-//  SecondTabViewController.swift
+//  TabViewController.swift
 //  animator bug
 //
 //  Created by Valerii Lider on 8/6/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SecondTabViewController: UIViewController {
+class TabViewController: UIViewController {
 
     lazy var transitionAnimator: TransitionAnimator = {
         let animator = TransitionAnimator()

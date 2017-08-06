@@ -55,7 +55,7 @@
         <!--Pushed VC-->
         <scene sceneID="Nha-qt-k1t">
             <objects>
-                <viewController hidesBottomBarWhenPushed="YES" id="NC0-Wt-xfV" customClass="SecondTabViewController" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="NC0-Wt-xfV" customClass="TabViewController" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="VIS-rG-3SN"/>
                         <viewControllerLayoutGuide type="bottom" id="cqW-Q4-8S4"/>
@@ -65,13 +65,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button to present by using custom transition animation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-a1-FGo">
-                                <rect key="frame" x="40" y="289.5" width="295" height="90"/>
+                                <rect key="frame" x="40" y="288.5" width="295" height="90"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-kR-sfa">
-                                <rect key="frame" x="156.5" y="395.5" width="62" height="30"/>
+                                <rect key="frame" x="156.5" y="394.5" width="62" height="30"/>
                                 <state key="normal" title="Tap Here"/>
                                 <connections>
                                     <segue destination="lGx-Qe-xdM" kind="presentation" id="6Hh-FI-qjK"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="1694" y="1513"/>
         </scene>
-        <!--Controller To Present-->
+        <!--Presented View Controller-->
         <scene sceneID="hyL-sw-wVM">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="lGx-Qe-xdM" customClass="ControllerToPresent" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="lGx-Qe-xdM" customClass="PresentedViewController" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ele-Uv-xrh"/>
                         <viewControllerLayoutGuide type="bottom" id="VnO-Rg-0ap"/>
@@ -139,11 +139,11 @@
             </objects>
             <point key="canvasLocation" x="2722" y="1513"/>
         </scene>
-        <!--Item-->
+        <!--Tab 1-->
         <scene sceneID="p0H-W1-23C">
             <objects>
                 <navigationController id="4Fl-nk-kM6" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="o0K-0c-Nxj"/>
+                    <tabBarItem key="tabBarItem" title="Tab 1" id="o0K-0c-Nxj"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="syu-41-SkV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

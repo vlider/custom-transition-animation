@@ -1,5 +1,5 @@
 //
-//  ControllerToPresent.swift
+//  PresentedViewController.swift
 //  animator bug
 //
 //  Created by Valerii Lider on 8/6/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ControllerToPresent: UIViewController {
+class PresentedViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
     

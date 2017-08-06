@@ -12,8 +12,8 @@
 		381AC17C1F3785D4008ED2BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 381AC17B1F3785D4008ED2BE /* Assets.xcassets */; };
 		381AC17F1F3785D4008ED2BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 381AC17D1F3785D4008ED2BE /* LaunchScreen.storyboard */; };
 		381AC1871F378765008ED2BE /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AC1861F378765008ED2BE /* TransitionAnimator.swift */; };
-		381AC1891F37878A008ED2BE /* SecondTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AC1881F37878A008ED2BE /* SecondTabViewController.swift */; };
-		381AC18B1F3787A5008ED2BE /* ControllerToPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AC18A1F3787A5008ED2BE /* ControllerToPresent.swift */; };
+		381AC1891F37878A008ED2BE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AC1881F37878A008ED2BE /* TabViewController.swift */; };
+		381AC18B1F3787A5008ED2BE /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381AC18A1F3787A5008ED2BE /* PresentedViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +24,8 @@
 		381AC17E1F3785D4008ED2BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		381AC1801F3785D4008ED2BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		381AC1861F378765008ED2BE /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
-		381AC1881F37878A008ED2BE /* SecondTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SecondTabViewController.swift; path = ../SecondTabViewController.swift; sourceTree = "<group>"; };
-		381AC18A1F3787A5008ED2BE /* ControllerToPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ControllerToPresent.swift; path = ../ControllerToPresent.swift; sourceTree = "<group>"; };
+		381AC1881F37878A008ED2BE /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
+		381AC18A1F3787A5008ED2BE /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +58,9 @@
 		381AC1731F3785D4008ED2BE /* animator bug */ = {
 			isa = PBXGroup;
 			children = (
-				381AC1881F37878A008ED2BE /* SecondTabViewController.swift */,
-				381AC18A1F3787A5008ED2BE /* ControllerToPresent.swift */,
 				381AC1741F3785D4008ED2BE /* AppDelegate.swift */,
+				381AC1881F37878A008ED2BE /* TabViewController.swift */,
+				381AC18A1F3787A5008ED2BE /* PresentedViewController.swift */,
 				381AC1861F378765008ED2BE /* TransitionAnimator.swift */,
 				381AC1781F3785D4008ED2BE /* Main.storyboard */,
 				381AC17B1F3785D4008ED2BE /* Assets.xcassets */,
@@ -143,8 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				381AC18B1F3787A5008ED2BE /* ControllerToPresent.swift in Sources */,
-				381AC1891F37878A008ED2BE /* SecondTabViewController.swift in Sources */,
+				381AC18B1F3787A5008ED2BE /* PresentedViewController.swift in Sources */,
+				381AC1891F37878A008ED2BE /* TabViewController.swift in Sources */,
 				381AC1751F3785D4008ED2BE /* AppDelegate.swift in Sources */,
 				381AC1871F378765008ED2BE /* TransitionAnimator.swift in Sources */,
 			);
