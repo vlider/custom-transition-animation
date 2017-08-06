@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WQu-oY-hKW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Root VC-->
+        <scene sceneID="cc1-GQ-CwY">
+            <objects>
+                <viewController id="9U0-Yp-pLR" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cOc-Gs-COP"/>
+                        <viewControllerLayoutGuide type="bottom" id="QIK-o3-NeY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2Bh-fn-i7P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button to push view controller. During push animation TabBar will be hidden. This is desired behavior." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h8m-iM-UVY">
+                                <rect key="frame" x="40" y="259.5" width="295" height="149.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUb-oa-S4Z">
+                                <rect key="frame" x="156" y="425" width="62" height="30"/>
+                                <state key="normal" title="Tap Here"/>
+                                <connections>
+                                    <segue destination="NC0-Wt-xfV" kind="show" id="B4d-dq-XWX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hUb-oa-S4Z" firstAttribute="centerX" secondItem="2Bh-fn-i7P" secondAttribute="centerX" id="7Go-jy-R8B"/>
+                            <constraint firstItem="h8m-iM-UVY" firstAttribute="centerY" secondItem="2Bh-fn-i7P" secondAttribute="centerY" id="EUB-KJ-sBp"/>
+                            <constraint firstItem="hUb-oa-S4Z" firstAttribute="top" secondItem="h8m-iM-UVY" secondAttribute="bottom" constant="16" id="YBR-6Q-RKv"/>
+                            <constraint firstAttribute="trailing" secondItem="h8m-iM-UVY" secondAttribute="trailing" constant="40" id="ZU2-Ce-tI6"/>
+                            <constraint firstItem="h8m-iM-UVY" firstAttribute="centerX" secondItem="2Bh-fn-i7P" secondAttribute="centerX" id="afj-Gd-xix"/>
+                            <constraint firstItem="h8m-iM-UVY" firstAttribute="leading" secondItem="2Bh-fn-i7P" secondAttribute="leading" constant="40" id="b1s-IL-tfV"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="hpx-IP-sew"/>
+                    <navigationItem key="navigationItem" title="Root VC" id="NeX-IX-qHB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lnc-9y-MoZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="649" y="1514"/>
+        </scene>
+        <!--Pushed VC-->
+        <scene sceneID="Nha-qt-k1t">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="NC0-Wt-xfV" customClass="SecondTabViewController" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VIS-rG-3SN"/>
+                        <viewControllerLayoutGuide type="bottom" id="cqW-Q4-8S4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fek-bU-OEA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap the button to present by using custom transition animation." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R9b-a1-FGo">
+                                <rect key="frame" x="40" y="289.5" width="295" height="90"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KVC-kR-sfa">
+                                <rect key="frame" x="156.5" y="395.5" width="62" height="30"/>
+                                <state key="normal" title="Tap Here"/>
+                                <connections>
+                                    <segue destination="lGx-Qe-xdM" kind="presentation" id="6Hh-FI-qjK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="R9b-a1-FGo" firstAttribute="centerX" secondItem="Fek-bU-OEA" secondAttribute="centerX" id="QQe-I1-bGf"/>
+                            <constraint firstItem="KVC-kR-sfa" firstAttribute="centerX" secondItem="Fek-bU-OEA" secondAttribute="centerX" id="TAE-Vc-sQV"/>
+                            <constraint firstItem="R9b-a1-FGo" firstAttribute="leading" secondItem="Fek-bU-OEA" secondAttribute="leading" constant="40" id="XI2-7g-wbt"/>
+                            <constraint firstItem="R9b-a1-FGo" firstAttribute="centerY" secondItem="Fek-bU-OEA" secondAttribute="centerY" id="a1w-Er-qW3"/>
+                            <constraint firstItem="KVC-kR-sfa" firstAttribute="top" secondItem="R9b-a1-FGo" secondAttribute="bottom" constant="16" id="gVh-E0-pDH"/>
+                            <constraint firstAttribute="trailing" secondItem="R9b-a1-FGo" secondAttribute="trailing" constant="40" id="vcC-aM-1sA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Pushed VC" id="5Lx-nO-sx7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kwx-Vr-zAo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1694" y="1513"/>
+        </scene>
+        <!--Controller To Present-->
+        <scene sceneID="hyL-sw-wVM">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="lGx-Qe-xdM" customClass="ControllerToPresent" customModule="animator_bug" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ele-Uv-xrh"/>
+                        <viewControllerLayoutGuide type="bottom" id="VnO-Rg-0ap"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kXJ-dZ-bAK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mvq-NO-42Q">
+                                <rect key="frame" x="40" y="205" width="295" height="258"/>
+                                <string key="text">Ok, now, when you tap, this controller will dismiss. And when you go back to root view controller - you will notice that TabBar shows and hides immediately.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="Mvq-NO-42Q" firstAttribute="centerX" secondItem="kXJ-dZ-bAK" secondAttribute="centerX" id="3sb-M2-X2P"/>
+                            <constraint firstItem="Mvq-NO-42Q" firstAttribute="centerY" secondItem="kXJ-dZ-bAK" secondAttribute="centerY" id="9oq-D3-0JM"/>
+                            <constraint firstItem="Mvq-NO-42Q" firstAttribute="leading" secondItem="kXJ-dZ-bAK" secondAttribute="leading" constant="40" id="IYf-aj-btu"/>
+                            <constraint firstAttribute="trailing" secondItem="Mvq-NO-42Q" secondAttribute="trailing" constant="40" id="qvX-HZ-LoH"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="P9s-88-V2e" appends="YES" id="x4h-PE-SYt"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="Mvq-NO-42Q" id="pIk-jj-1CL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="del-Zf-yLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="P9s-88-V2e">
+                    <connections>
+                        <action selector="onDismiss:" destination="lGx-Qe-xdM" id="EvN-pY-IB8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="2722" y="1513"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="p0H-W1-23C">
+            <objects>
+                <navigationController id="4Fl-nk-kM6" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="o0K-0c-Nxj"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="syu-41-SkV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9U0-Yp-pLR" kind="relationship" relationship="rootViewController" id="ZKE-xV-ePK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I4W-Jr-Wm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="650" y="719"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="7Hx-ke-awQ">
+            <objects>
+                <tabBarController id="WQu-oY-hKW" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="x1g-JY-861"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="5WG-86-LvY">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="4Fl-nk-kM6" kind="relationship" relationship="viewControllers" id="BKe-p1-PhC"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vwU-ju-Oqg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="-46"/>
+        </scene>
+    </scenes>
+</document>
